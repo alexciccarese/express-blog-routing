@@ -4,7 +4,7 @@ const {posts} = require('../server')
 
 //index
 router.get('/', (req, res) => {
-  res.send('Return all posts here')
+  res.json(posts)
 })
 
 //store
