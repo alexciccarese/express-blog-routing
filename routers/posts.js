@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const {posts} = require('../server')
 
 //index
 router.get('/', (req, res) => {
