@@ -62,3 +62,6 @@ app.get('/api/v1/bacheca', (req, res) => {
 
 
 app.use("/posts", postsRouter)
+
+//esportiamo l'array
+module.exports = {posts}
