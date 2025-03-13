@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 3002
+const postsRouter = require('./routers/posts')
 
 //Configuriamo gli assets statici per visualizzare le immagini di ogni post
 app.use(express.static('public'))
@@ -58,3 +59,6 @@ app.get('/api/v1/bacheca', (req, res) => {
 
   res.json(posts)
 })
+
+
+app.use("/posts", postsRouter)
